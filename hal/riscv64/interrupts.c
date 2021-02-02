@@ -158,7 +158,7 @@ __attribute__((aligned(4))) void handler(cpu_context_t *ctx)
 
 	c = hal_cpuGetCycles2();
 
-	sbi_ecall(SBI_SETTIMER, 0, c + 1000, 0, 0, 0, 0, 0);
+	sbi_ecall(SBI_SETTIMER, 0, c + 10000, 0, 0, 0, 0, 0);
 }
 
 
